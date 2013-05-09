@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-  rolify
+  rolify :role_cname => 'Customer'
+  rolify :role_cname => 'Admin'
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
